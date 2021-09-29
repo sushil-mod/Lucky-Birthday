@@ -6,8 +6,10 @@ var showLuck = document.querySelector("#show-luck");
 checkNumber.addEventListener('click',function getDateNum() {
     var birthDate = dateOfBirth.value;
     var sum = calSum(birthDate);
-    checkLucky(sum,luckyNum.value);
-  
+    if(sum&&luckyNum.value)
+    {checkLucky(sum,luckyNum.value);}
+    else{showLuck.innerHTML="please enter valid values"}
+    
 });
 
 function calSum(birthDate){
