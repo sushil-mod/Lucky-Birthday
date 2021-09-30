@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,14 +8,18 @@
     <link rel="stylesheet" href="./style.css">
     <title>Lucky Birthday</title>
 </head>
+
 <body>
-    <h1>Is your birthday is lucky ?</h1>
-    <h3>Date of birth</h3>
-    <input id="dob" type="date" />
-    <h3>lucky number</h3>
-    <input id="lucky-number" type="number">
-    <button id="check-number">check number</button>
-    <p id="show-luck">sushil</p>
+    <h1 class="header ">Is your birthday is lucky ?</h1>
+    <main class="container">
+        <label for="dob">Date of Birth :<input id="dob" type="date" /></label>
+        <label for="lucky-number"> Enter Your Lucky Number :<input id="lucky-number" type="number"></label>
+
+        <button id="check-number">check number</button>
+        <p id="show-luck"></p>
+    </main>
+
     <script src="./app.js"></script>
 </body>
+
 </html>
